@@ -1,0 +1,132 @@
+body{
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.purple{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: -1;
+}
+
+
+
+.slogan{
+    margin-top: 50px;
+    color: white;
+    font-family: "Bitter", serif;
+    font-size: 91px;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+
+.def{
+    color: white;
+    font-size: 25px;
+    font-family: "Space Mono", monospace;
+    position: absolute;
+    top: 350px;
+    left: 20px;
+}
+
+.button {
+    background-color: white;
+    border: none;
+    color: black;
+    font-family: "Space Mono", monospace;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    position: absolute;
+    top: 450px;
+    left: 18px;
+  }
+
+  .cards-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    position: absolute;
+    top: 600px;
+}
+
+.card {
+    background-color: #414141;
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 300px;
+    height: 150px;
+}
+
+.icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.title {
+    margin: 0;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.description {
+    margin: 0;
+    font-size: 14px;
+}
+
+h3{
+    color: white;
+    position: absolute;
+    right: 70px;
+    top: 80px;
+    font-size: 50px;
+    font-family: "Bitter", serif; 
+}
+
+.rightdef{
+    font-family: "Space Mono", monospace;
+    color: white;
+    position: absolute;
+    right: 40px;
+    top: 165px;
+    font-size: 20px;
+}
+
+.sun{
+    width: 190px;
+    height: 190px;
+    background: radial-gradient(circle, yellow, orange);
+    border-radius: 50%;
+    box-shadow: 0 0 50px 20px rgba(255, 223, 0, 0.8);
+    animation: sunny 2s infinite;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    z-index: -1;
+}
+
+@keyframes sunny {
+    0%, 100% {
+        box-shadow: 0 0 50px 20px rgba(255, 223, 0, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 70px 30px rgba(255, 223, 0, 1);
+    }
+}
+.card:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
